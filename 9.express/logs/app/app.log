@@ -1,1 +1,2 @@
 {"level":"error","message":"AAA","service":"http-service"}
+{"level":"info","message":"Application Starting","service":"http-service"}

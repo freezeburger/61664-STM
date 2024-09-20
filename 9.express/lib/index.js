@@ -1,8 +1,10 @@
+require('dotenv').config();
 const logger = require('./logger');
 
-const PORT = 3000;
-const STATIC_FILES = './public';
-const LOGS_HTTP = './logs/http';
-const LOGS_APP = './logs/app';
+logger.info('Application Starting');
 
-require('./http-server')(LOGS_HTTP, STATIC_FILES, PORT);
+require('./http-server')(
+    process.env.LOGS_HTTP, 
+    process.env.STATIC_FILES, 
+    process.env.PORT
+);
