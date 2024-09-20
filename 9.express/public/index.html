@@ -3,15 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 <body>
-    <button onclick="requestApi()">Load Data</button>
-    <div id="result"></div>
+
+    <!-- nav.navbar.bg-primary -->
+    <nav class="navbar bg-primary">
+        Application
+    </nav>
+
+    <main class="container p-2">
+        <button onclick="requestApi()" class="btn btn-primary">Load Data</button>
+
+        <div class="card m-2" hidden>
+            <div class="card-title">Data</div>
+            <div class="card-body">
+                <div id="result"></div>
+            </div>
+        </div>
+        
+    </main>
+
+
+
     <script>
-        function requestApi(){
+        /* function requestApi(){
             fetch('/api').then( res => res.text() ).then(data => result.innerHTML = data)
-        }
+        } */
+       async function requestApi(){
+
+            const response = await fetch('/api');
+
+            const data = await response.text();
+            result.innerHTML = data;
+            document.querySelector('.card').removeAttribute('hidden');
+
+       }
     </script>
 </body>
 </html>
