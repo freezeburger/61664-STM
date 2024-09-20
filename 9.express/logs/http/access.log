@@ -1,0 +1,2 @@
+::1 - - [20/Sep/2024:10:39:23 +0000] "GET / HTTP/1.1" 200 440 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+::1 - - [20/Sep/2024:10:39:24 +0000] "GET /api HTTP/1.1" 200 17 "http://localhost:3000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"

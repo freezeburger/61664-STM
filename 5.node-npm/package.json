@@ -1,0 +1,17 @@
+{
+  "name": "node-npm",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "preinstall": "echo Bonjour Developpeur",
+    "postinstall": "echo Happy Coding",
+    "prestart":"echo Starting",
+    "start":"echo Started"
+  },
+  "dependencies": {
+    "colors": "^1.3.0"
+  }
+}

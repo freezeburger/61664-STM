@@ -1,0 +1,13 @@
+{
+  "name": "6.js-fundamentals",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "prestart": "npm i",
+    "start": "node ."
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}

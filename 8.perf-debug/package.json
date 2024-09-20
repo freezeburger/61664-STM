@@ -1,0 +1,10 @@
+{
+  "name": "perf-debug",
+  "version": "1.0.0",
+  "main": "lib/main.js",
+  "scripts": {
+    "start":"node .",
+    "profile":"node --prof .",
+    "debug":"node --inspect-brk ."
+  }
+}

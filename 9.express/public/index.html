@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="requestApi()">Load Data</button>
+    <div id="result"></div>
+    <script>
+        function requestApi(){
+            fetch('/api').then( res => res.text() ).then(data => result.innerHTML = data)
+        }
+    </script>
+</body>
+</html>
