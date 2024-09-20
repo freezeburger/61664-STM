@@ -1,3 +1,4 @@
+const logger = require('./logger');
 
 const PORT = 3000;
 const STATIC_FILES = './public';
